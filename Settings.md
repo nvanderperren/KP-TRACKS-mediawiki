@@ -17,7 +17,11 @@ Source: [Manual:Configuring file uploads](https://www.mediawiki.org/wiki/Manual:
   
 ### Enable upload by copy of URL
 
-It's possible to upload files by copying a URL of the file. 
+It's possible to upload files by copying a URL of the file.
+
+![upload by url](images/upload_url_1.png)
+
+![kitties](images/upload_url_2.png)
 
 Add following lines in `LocalSettings.php`:
 
