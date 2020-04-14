@@ -17,7 +17,7 @@ Source: [Manual:Configuring file uploads](https://www.mediawiki.org/wiki/Manual:
   
 ### Enable upload by copy of URL
 
-It's possible to upload files by copying a URL of the file.
+It's possible to upload files by copying a URL of the file. These files will be downloaded to the `images`-folder on your server.
 
 ![upload by url](images/upload_url_1.png)
 
@@ -61,4 +61,4 @@ Use images in your wiki text of Wikimedia Commons (example: [https://commons.wik
 [[Image:Vooruit_Gent.jpg]]
 ```
 
-Source: [InstantCommons](https://www.mediawiki.org/wiki/InstantCommons).
+More information: [InstantCommons](https://www.mediawiki.org/wiki/InstantCommons).
