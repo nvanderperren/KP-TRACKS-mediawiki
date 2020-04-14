@@ -15,7 +15,7 @@ Source: [Manual:Configuring file uploads](https://www.mediawiki.org/wiki/Manual:
   - in our local instanc: `chmod 777 images`
   - in production we'll probably `chown` to the webserver group and `chmod 775 images`
   
-### Enable upload by copy of URL$
+### Enable upload by copy of URL
 
 It's possible to upload files by copying a URL of the file. 
 
