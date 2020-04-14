@@ -79,6 +79,8 @@ More information: [InstantCommons](https://www.mediawiki.org/wiki/InstantCommons
 
 ## Rights Information
 
+Source: [Category:Copyright variables](https://www.mediawiki.org/wiki/Category:Copyright_variables)
+
 You can add rights information on every page. Choose the right license and icon and change this in the `LocalSettings.php`. These licesens are supported by default:
 
 - CC0
@@ -103,6 +105,8 @@ $wgRightsText = ""; # Text for the link of $wgRightsPage
 We use the CC-licenses in our setup.
 
 ## Configure footer icons
+
+Source: [Manual:$wgFooterIcons](https://www.mediawiki.org/wiki/Manual:$wgFooterIcons)
 
 Default, the _powered by Mediawiki_ and license icon are shown in the footer. You can add new icons to the footer or remove the default ones.
 
