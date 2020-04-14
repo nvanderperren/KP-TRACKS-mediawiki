@@ -43,3 +43,22 @@ $wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc','xls',
 ```
 
 You can add or remove file types
+
+### Enable use of images of Wikimedia Commons
+
+InstantCommons is a feature which gives you immediate access to the millions of free (freely licensed) files in Wikimedia Commons.
+
+Change following line in `LocalSettings.php`:
+
+```php
+# InstantCommons allows wiki to use images from https://commons.wikimedia.org
+$wgUseInstantCommons = true;
+```
+
+Use images in your wiki texts (example: [https://commons.wikimedia.org/wiki/File:Vooruit_Gent.jpg](https://commons.wikimedia.org/wiki/File:Vooruit_Gent.jpg)):
+
+```wiki
+[[Image:Vooruit_Gent.jpg]]
+```
+
+Source: [InstantCommons](https://www.mediawiki.org/wiki/InstantCommons).
