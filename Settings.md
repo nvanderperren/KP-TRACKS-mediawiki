@@ -55,7 +55,7 @@ Change following line in `LocalSettings.php`:
 $wgUseInstantCommons = true;
 ```
 
-Use images in your wiki texts (example: [https://commons.wikimedia.org/wiki/File:Vooruit_Gent.jpg](https://commons.wikimedia.org/wiki/File:Vooruit_Gent.jpg)):
+Use images in your wiki text of Wikimedia Commons (example: [https://commons.wikimedia.org/wiki/File:Vooruit_Gent.jpg](https://commons.wikimedia.org/wiki/File:Vooruit_Gent.jpg)):
 
 ```wiki
 [[Image:Vooruit_Gent.jpg]]
