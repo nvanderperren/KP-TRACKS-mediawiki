@@ -204,6 +204,38 @@ wfLoadExtension( 'WikiEditor' );
 
 For more information about the extensions used in our setup, go to the [Extensions page](Extensions.md)
 
-## Visual editor
+### Visual editor
+
+Needs to be enabled for custom namespaces in the `LocalSettings.php`.
+
+```php
+$wgVisualEditorAvailableNamespaces = [
+  "Pilootproject" => true,
+  "Topic" => true,
+  "Organisatie" => true
+];
+```
+
+VisualEditor can be set as the default editor:
+
+```php
+$wgDefaultUserOptions['visualeditor-enable'] = 1;
+```
 
 ### Parsoid
+
+[Parsoid](https://www.mediawiki.org/wiki/Parsoid) needs to be installed on the server. Starting from June 2020, it will be integrated by default in the Mediawiki code.
+
+Connection with Parsoid needs to be configured in the `LocalSettings.php`.
+
+```php
+$wgVirtualRestConfig['modules']['parsoid'] = array(
+  // URL to the Parsoid instance
+  // Use port 8142 if you use the Debian package
+  'url' => 'https://localhost:8000',
+  // Parsoid "domain", see below (optional)
+  'domain' => 'localhost',
+  // Parsoid "prefix", see below (optional)
+  'prefix' => 'localhost'
+);
+```
