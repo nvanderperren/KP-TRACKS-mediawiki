@@ -163,9 +163,20 @@ $wgDefaultSkin = "vector";
 # The following skins were automatically enabled:
 wfLoadSkin( 'Vector' );
 
+## Custom namespaces
+define("NS_PILOOTPROJECT", 20);
+define("NS_PILOOTPROJECT_TALK", 21);
+define("NS_TOPIC", 30);
+define("NS_TOPIC_TALK", 31);
+define("NS_ORGANISATIE", 40);
+define("NS_ORGANISATIE_TALK", 41);
 
-# End of automatically generated settings.
-# Add more configuration options below.
+$WgExtraNamespaces[NS_PILOOTPROJECT] = "Pilootproject";
+$WgExtraNamespaces[NS_PILOOTPROJECT_TALK] = "Pilootproject_talk";
+$WgExtraNamespaces[NS_TOPIC] = "Topic";
+$WgExtraNamespaces[NS_TOPIC_TALK] = "Topic_talk";
+$WgExtraNamespaces[NS_ORGANISATIE] = "Organisatie";
+$WgExtraNamespaces[NS_ORGANISATIE_TALK] = "Organisatie_talk";
 
 
 ## WikiEditor

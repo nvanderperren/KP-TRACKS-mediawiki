@@ -156,7 +156,26 @@ $wgFooterIcons = [
  ];
 ```
 
+## Custom namespaces
+
+It's possible to add custom namespaces to structure the wiki, e.g. _Pilootprojecten_ to collect all the pilots of TRACKS, or _Organisaties_ for all the TRACKS-organisations.
+
+You can add this feature in the `LocalSettings.php`
+
+First, you'll need to define the namespace and its talk page by giving it an id and a number:
+
+```php
+define("NS_PILOOTPROJECT", 20);
+define("NS_PILOOTPROJECT_TALK", 21);
+```
+
+Next, give a name to the namespaces:
+
+```php
+$WgExtraNamespaces[NS_PILOOTPROJECT] = "Pilootproject";
+$WgExtraNamespaces[NS_PILOOTPROJECT_TALK] = "Pilootproject_talk";
+```
+
 ## Visual editor
 
 ### Parsoid
-
