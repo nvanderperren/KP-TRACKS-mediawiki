@@ -1,5 +1,7 @@
 # API calls
 
+Note: starting from v. 1.35 a [REST API](https://www.mediawiki.org/wiki/API:REST_API) will be integrated which will make it a lot easier.
+
 Our server is `http://localhost:8080/`. All examples use this server. Change this in your own server name.
 
 ## API endpoint
