@@ -195,6 +195,15 @@ wfLoadSkin( 'Vector' );
 
 To add an extension, go to the `extensions` folder in your mediawiki installation folder: `cd extensions`; then download the code of the extension on the Mediawiki website ([All extensions](https://www.mediawiki.org/wiki/Category:All_extensions)).
 
+You then must activate the extension in the `LocalSettings.php`, e.g.:
+
+```php
+## WikiEditor
+wfLoadExtension( 'WikiEditor' );
+```
+
+For more information about the extensions used in our setup, go to the [Extensions page](Extensions.md)
+
 ## Visual editor
 
 ### Parsoid
