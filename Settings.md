@@ -50,8 +50,8 @@ $wgCopyUploadsFromSpecialUpload = true;
 Default, only `.png`, `.gif`, `.jpg`, `.jpeg`, `.webp` can be uploaded. It's possible to add more file types via `LocalSettings.php`:
 
 ```php
-$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc','xls', 
-  'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx', 'pptx', 
+$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc','xls',
+  'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx', 'pptx',
   'tif', 'odt', 'ods', 'odp'
  );`
 ```
@@ -175,6 +175,25 @@ Next, give a name to the namespaces:
 $WgExtraNamespaces[NS_PILOOTPROJECT] = "Pilootproject";
 $WgExtraNamespaces[NS_PILOOTPROJECT_TALK] = "Pilootproject_talk";
 ```
+
+## Skins
+
+To add a skin, go to the `skins` folder in your mediawiki installation folder: `cd skins`; then download the code of the skin on the Mediawiki website ([All skins](https://www.mediawiki.org/wiki/Category:All_skins)).
+
+Activate the skin by adjusting some variables in the `LocalSettings.php`:
+
+```php
+## Default skin: you can change the default skin. Use the internal symbolic
+## names, ie 'vector', 'monobook':
+$wgDefaultSkin = "vector";
+
+# Enabled skins.
+wfLoadSkin( 'Vector' );
+```
+
+## Extensions
+
+To add an extension, go to the `extensions` folder in your mediawiki installation folder: `cd extensions`; then download the code of the extension on the Mediawiki website ([All extensions](https://www.mediawiki.org/wiki/Category:All_extensions)).
 
 ## Visual editor
 
