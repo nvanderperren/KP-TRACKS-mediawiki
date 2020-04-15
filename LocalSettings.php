@@ -186,3 +186,27 @@ wfLoadExtension( 'ParserFunctions' );
 $wgPFEnableStringFunctions = true;
 ## Variables
 wfLoadExtension( 'Variables' );
+
+## VisualEditor
+wfLoadExtension('VisualEditor');
+// Enable by default for everybody
+$wgDefaultUserOptions['visualeditor-enable'] = 1;
+## VisualEditor needs parsoid. In our docker environment, we'll use the one of Wikipedia
+## But you MUST install parsoid
+$wgVirtualRestConfig['modules']['parsoid'] = array(
+  // URL to the Parsoid instance
+  // Use port 8142 if you use the Debian package
+  'url' => 'https://en.wikipedia.org',
+  // Parsoid "domain", see below (optional)
+  'domain' => 'en.wikipedia.org',
+  // Parsoid "prefix", see below (optional)
+  'prefix' => 'localhost'
+);
+$wgVisualEditorFullRestbaseURL = 'https://en.wikipedia.org/api/rest_';
+
+## Enable VisualEditor for custom namespaces
+$wgVisualEditorAvailableNamespaces = [
+    "Pilootproject" => true,
+	"Topic" => true,
+	"Organisatie" => true
+];
