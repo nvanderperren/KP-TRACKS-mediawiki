@@ -206,7 +206,7 @@ $wgVisualEditorFullRestbaseURL = 'https://en.wikipedia.org/api/rest_';
 
 ## Enable VisualEditor for custom namespaces
 $wgVisualEditorAvailableNamespaces = [
-    "Pilootproject" => true,
+	"Pilootproject" => true,
 	"Topic" => true,
 	"Organisatie" => true
 ];
