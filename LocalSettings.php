@@ -178,5 +178,11 @@ $WgExtraNamespaces[NS_TOPIC_TALK] = "Topic_talk";
 $WgExtraNamespaces[NS_ORGANISATIE] = "Organisatie";
 $WgExtraNamespaces[NS_ORGANISATIE_TALK] = "Organisatie_talk";
 
+# Extensions
 ## WikiEditor
 wfLoadExtension( 'WikiEditor' );
+## ParserFunctions
+wfLoadExtension( 'ParserFunctions' );
+$wgPFEnableStringFunctions = true;
+## Variables
+wfLoadExtension( 'Variables' );
