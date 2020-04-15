@@ -171,12 +171,12 @@ define("NS_TOPIC_TALK", 31);
 define("NS_ORGANISATIE", 40);
 define("NS_ORGANISATIE_TALK", 41);
 
-$WgExtraNamespaces[NS_PILOOTPROJECT] = "Pilootproject";
-$WgExtraNamespaces[NS_PILOOTPROJECT_TALK] = "Pilootproject_talk";
-$WgExtraNamespaces[NS_TOPIC] = "Topic";
-$WgExtraNamespaces[NS_TOPIC_TALK] = "Topic_talk";
-$WgExtraNamespaces[NS_ORGANISATIE] = "Organisatie";
-$WgExtraNamespaces[NS_ORGANISATIE_TALK] = "Organisatie_talk";
+$wgExtraNamespaces[NS_PILOOTPROJECT] = "Pilootproject";
+$wgExtraNamespaces[NS_PILOOTPROJECT_TALK] = "Pilootproject_talk";
+$wgExtraNamespaces[NS_TOPIC] = "Topic";
+$wgExtraNamespaces[NS_TOPIC_TALK] = "Topic_talk";
+$wgExtraNamespaces[NS_ORGANISATIE] = "Organisatie";
+$wgExtraNamespaces[NS_ORGANISATIE_TALK] = "Organisatie_talk";
 
 # Extensions
 ## WikiEditor

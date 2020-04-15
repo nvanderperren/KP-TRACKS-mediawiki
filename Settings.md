@@ -172,8 +172,8 @@ define("NS_PILOOTPROJECT_TALK", 21);
 Next, give a name to the namespaces:
 
 ```php
-$WgExtraNamespaces[NS_PILOOTPROJECT] = "Pilootproject";
-$WgExtraNamespaces[NS_PILOOTPROJECT_TALK] = "Pilootproject_talk";
+$wgExtraNamespaces[NS_PILOOTPROJECT] = "Pilootproject";
+$wgExtraNamespaces[NS_PILOOTPROJECT_TALK] = "Pilootproject_talk";
 ```
 
 ## Skins
