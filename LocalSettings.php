@@ -82,8 +82,9 @@ $wgImageMagickConvertCommand = "/usr/bin/convert";
 
 ## Allowed File types
 $wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc',
-    'xls', 'mpp', 'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx',
-    'pptx', 'ps', 'odt', 'ods', 'odp', 'odg'
+    'xls', 'pdf', 'ppt', 'docx', 'xlsx',
+	'pptx', 'odt', 'ods', 'odp', 'webm',
+	'mp4', 'ogg'
 );
 
 ## Enable upload by copy of URL

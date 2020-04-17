@@ -18,9 +18,12 @@ $wgSitename = "KP TRACKS";
 $wgLogo = "$wgResourceBasePath/resources/assets/logo.svg"; # path to your image
 ```
 
-## Enable upload
+## File usage
 
-Source: [Manual:Configuring file uploads](https://www.mediawiki.org/wiki/Manual:Configuring_file_uploads)
+There are a lot of configurations, concerning files:
+
+- more information on configuration for images and certain file types, go to the [Manual:Configuration settings about images](https://www.mediawiki.org/wiki/Manual:Configuration_settings#Images) on Mediawiki.
+- more information on [configuring file uploads](https://www.mediawiki.org/wiki/Manual:Configuring_file_uploads)
 
 ### Enable file upload
 
@@ -50,13 +53,30 @@ $wgCopyUploadsFromSpecialUpload = true;
 Default, only `.png`, `.gif`, `.jpg`, `.jpeg`, `.webp` can be uploaded. It's possible to add more file types via `LocalSettings.php`:
 
 ```php
-$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc','xls',
-  'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx', 'pptx',
-  'tif', 'odt', 'ods', 'odp'
+$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc','xls','pdf', 'ppt', 'docx', 'xlsx', 'pptx', 'odt', 'ods', 'odp', 'webm', 'mp4', 'ogg'
  );`
 ```
 
-You can add or remove file types
+You can add or remove file types. In the above line, only file formats of image and video that are supported by browsers are enabled. You can also decide to allow TIFF (which isn't supported by browsers) files and have them converted in thumbnals by Mediawiki itself. They can be converted in JPEG or PNG. Add one of following lines in `LocalSettings.php`:
+
+```php
+// PNG is lossless, but inefficient for photos
+$wgTiffThumbnailType = array( 'png', 'image/png' );
+
+// JPEG is good for photos, but has no transparency support. Bad for diagrams.
+$wgTiffThumbnailType = array( 'jpg', 'image/jpeg' );
+```
+
+### Enable use of ImageMagick
+
+MediaWiki can be configured to use ImageMagick to do dynamic resizing and thumbnailing of images. ImageMagick is recommended since it produces better quality thumbnails.
+
+Uncomment following lines in the `LocalSettings.php`:
+
+```php
+$wgUseImageMagick = true;
+$wgImageMagickConvertCommand = '/usr/bin/convert'; # for linux
+```
 
 ### Enable use of images of Wikimedia Commons
 
