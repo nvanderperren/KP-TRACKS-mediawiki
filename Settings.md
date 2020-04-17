@@ -1,6 +1,6 @@
 # Settings
 
-All settings should be changes in the file `LocalSettings.php`. This file is in the root folder of the application.
+All settings should be changed in the file `LocalSettings.php`. This file is in the root folder of the application.
 
 ## Contents
 
