@@ -214,3 +214,32 @@ $wgVisualEditorAvailableNamespaces = [
 	"Organisatie" => true
 ];
 */
+
+## UploadWizard
+wfLoadExtension( 'UploadWizard' );
+$wgApiFrameOptions = 'SAMEORIGIN'; # now it can be used in IE
+$wgUploadNavigationUrl = '/wiki/Speciaal:WizardUploaden'; #default upload tool
+$wgUploadWizardConfig = array(
+	'debug' => false,
+	'autoAdd' => array(
+	 	'wikitext' => array(),
+	 	'categories' => array(),
+		), // Should be localised to the language of your wiki instance
+	'feedbackPage' => 'Feedback about UploadWizard',
+	'altUploadForm' => 'Special:Upload',
+	'fallbackToAltUploadForm' => false,
+	'feedbackLink' => false, // Disable the link for feedback (default: points to Commons)
+	'alternativeUploadToolsPage' => false, // Disable the link to alternative upload tools (default: points to Commons)
+	'enableFormData' => true, // Enable FileAPI uploads be used on supported browsers
+	'enableMultipleFiles' => true,
+	'enableMultiFileSelect' => false,
+	'uwLanguages' => array(
+		'nl' => 'Nederlands',
+		'en' => 'English'
+		), // Selectable languages for file descriptions - defaults to 'en'
+	'tutorial' => array(
+	 	'skip' => true
+		), // Skip the tutorial
+	'maxUploads' => 25, // Number of uploads with one form - defaults to 50
+	'fileExtensions' => $wgFileExtensions // omitting this may cause errors
+	);
