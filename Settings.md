@@ -4,25 +4,13 @@ All settings should be changes in the file `LocalSettings.php`. This file is in 
 
 ## Contents
 
-- [Settings](#settings)
-  - [Contents](#contents)
-  - [LocalSettings.php](#localsettingsphp)
-  - [Change name and logo of website](#change-name-and-logo-of-website)
-  - [File usage](#file-usage)
-    - [Enable file upload](#enable-file-upload)
-    - [Enable upload by copy of URL](#enable-upload-by-copy-of-url)
-    - [Configure file types](#configure-file-types)
-    - [Enable use of ImageMagick](#enable-use-of-imagemagick)
-    - [Enable use of images of Wikimedia Commons](#enable-use-of-images-of-wikimedia-commons)
-    - [Bulk uploads](#bulk-uploads)
-  - [Rights Information](#rights-information)
-  - [Configure footer icons](#configure-footer-icons)
-  - [Custom namespaces](#custom-namespaces)
-  - [Skins](#skins)
-  - [Extensions](#extensions)
-    - [Visual editor](#visual-editor)
-    - [Parsoid](#parsoid)
-    - [UploadWizard](#uploadwizard)
+- [LocalSettings.php](#localsettingsphp)
+- [Name and logo](#change-name-and-logo-of-website)
+- [File usage & (bulk) uploads](#file-usage)
+- [Footer](#configure-footer-icons)
+- [Custom namespaces](#custom-namespaces) (not required)
+- [Skins](#skins)
+- [Extensions](#extensions)
 
 ## LocalSettings.php
 
@@ -134,6 +122,7 @@ __Requirements:__
 ![uploadwizard_2](images/uploadwizard_2.png)
 
 ![uploadwizard_3](images/uploadwizard_3.png)
+
 A wizard for choosing a license is included.
 
 ![uploadwizard_4](images/uploadwizard_4.png)
@@ -143,11 +132,13 @@ A wizard for choosing a license is included.
 ![uploadwizard_6](images/uploadwizard_6.png)
 
 ![uploadwizard_7](images/uploadwizard_7.png)
+
 You can add descriptions in multiple languages (needs to be configured in your `LocalSettings.php` for this extension)
 
 ![uploadwizard_8](images/uploadwizard_8.png)
 
 ![uploadwizard_9](images/uploadwizard_9.png)
+
 EXIF-metadata can also be uploaded
 
 ![uploadwizard_10](images/uploadwizard_10.png)
