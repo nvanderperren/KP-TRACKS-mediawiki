@@ -81,7 +81,7 @@ $wgTiffThumbnailType = array( 'jpg', 'image/jpeg' );
 
 MediaWiki can be configured to use ImageMagick to do dynamic resizing and thumbnailing of images. ImageMagick is recommended since it produces better quality thumbnails.
 
-Uncomment following lines in the `LocalSettings.php`:
+Install [ImageMagick](https://imagemagick.org/index.php) on the server and uncomment following lines in the `LocalSettings.php`:
 
 ```php
 $wgUseImageMagick = true;
@@ -92,7 +92,7 @@ $wgImageMagickConvertCommand = '/usr/bin/convert'; # for linux
 
 InstantCommons is a feature which gives you immediate access to the millions of free (freely licensed) files in Wikimedia Commons.
 
-Install [ImageMagick](https://imagemagick.org/index.php) on the server and change following line in `LocalSettings.php`:
+Change following line in `LocalSettings.php`:
 
 ```php
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
