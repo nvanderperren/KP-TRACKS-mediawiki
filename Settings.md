@@ -92,7 +92,7 @@ $wgImageMagickConvertCommand = '/usr/bin/convert'; # for linux
 
 InstantCommons is a feature which gives you immediate access to the millions of free (freely licensed) files in Wikimedia Commons.
 
-Change following line in `LocalSettings.php`:
+Install [ImageMagick](https://imagemagick.org/index.php) on the server and change following line in `LocalSettings.php`:
 
 ```php
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
